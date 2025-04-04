@@ -9,9 +9,7 @@ Dowload zip-file and unpack him
 # To Setup
 
 1. Install Python
-2. Install lib:
-  1. flask
-  2. qrcode
+2. Install lib - flask qrcode
 
 ```bash
 py -m pip install flask
