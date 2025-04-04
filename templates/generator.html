@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор QR-кодов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор QR-кодов</h1>
+        <form method="POST" action="{{ url_for('generate') }}">
+            <input type="text" name="text" placeholder="Введите текст или ссылку" required>
+            <button type="submit">Сгенерировать QR-код</button>
+        </form>
+        {% if qr_code %}
+        <div class="result">
+            <h2>QR-код для: {{ text }}</h2>
+            <img src="data:image/png;base64,{{ qr_code }}" alt="QR код">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
