@@ -9,12 +9,10 @@ Dowload zip-file and unpack him
 # To Setup
 
 1. Install Python
-2. Install lib - flask qrcode
+2. Install lib - github.com/Knetic/govaluate
 
 ```bash
-py -m pip install flask
-
-py -m pip install qrcode
+go get github.com/Knetic/govaluate
 ```
 
 # To Run
@@ -22,5 +20,5 @@ py -m pip install qrcode
 Write in cmd
 
 ```bash
-python app.py
+go run main.go
 ```
