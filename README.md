@@ -8,11 +8,13 @@ Dowload zip-file and unpack him
 
 # To Setup
 
-1. Install Python
-2. Install lib - github.com/Knetic/govaluate
+1. Install Golang
+2. Install lib - flask qrcode
 
 ```bash
-go get github.com/Knetic/govaluate
+py -m pip install flask
+
+py -m pip install qrcode
 ```
 
 # To Run
@@ -20,5 +22,5 @@ go get github.com/Knetic/govaluate
 Write in cmd
 
 ```bash
-go run main.go
+python app.py
 ```
